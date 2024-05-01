@@ -27,10 +27,13 @@ import androidx.compose.material.icons.filled.AccountBox
 import androidx.compose.material.icons.filled.Call
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.TopAppBar
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -117,6 +120,26 @@ fun userprofile() {
 
     }
 
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+fun MyScaffold() {
+    Scaffold(
+        topBar = {
+            TopAppBar(title = { /*TODO*/ })
+        }
+    ) {
+
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+fun MyScaffoldPreview() {
+    FaisalTheme {
+        MyScaffold()
+    }
 }
 
 
