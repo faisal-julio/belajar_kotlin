@@ -52,7 +52,7 @@ class MainActivity : ComponentActivity() {
             FaisalTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                    userprofile()
+                    MyScaffold()
                 }
             }
         }
@@ -60,7 +60,7 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun userprofile() {
+fun Userprofile() {
     Box (modifier = Modifier
         .background(Color.Black)
         .border(2.dp, Color.White)){
@@ -109,7 +109,7 @@ fun userprofile() {
                     .align(Alignment.CenterVertically)
                     .width(30.dp)
                     .height(40.dp)
-                    .offset(x = -20.dp)
+                    .offset(x = (-20).dp)
             )
         }
     }
@@ -131,8 +131,8 @@ fun MyScaffold() {
     ) {
         Box(
             modifier = Modifier
-            .padding(it)
-            .fillMaxSize(),
+                .padding(it)
+                .fillMaxSize(),
             contentAlignment = Alignment.Center
         )
         {
@@ -152,9 +152,9 @@ fun MyScaffoldPreview() {
 
 @Preview(showBackground = true)
 @Composable
-fun userProfilePreview() {
+fun UserProfilePreview() {
     FaisalTheme {
-        userprofile()
+        Userprofile()
     }
 }
 
