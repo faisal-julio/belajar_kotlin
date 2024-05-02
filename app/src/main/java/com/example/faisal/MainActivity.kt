@@ -136,7 +136,7 @@ fun MyScaffold() {
             contentAlignment = Alignment.Center
         )
         {
-            Text(text = "Hello world")
+            Text(text = "halo nama saya faisal saya bercita cita menjadi programer")
         }
     }
 }
